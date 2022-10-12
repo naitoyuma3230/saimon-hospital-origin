@@ -862,7 +862,7 @@ footer .box_pr {
 -------------------------------------------*/
 
 .obi_001 {
-	background-image: url(../img/obi_001.jpg);
+	/* background-image: url(../img/obi_001.jpg); */
 	background-repeat: no-repeat;
 	text-align: center;
 	padding-top: 15%;
