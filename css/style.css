@@ -869,7 +869,7 @@ footer .box_pr {
 	padding-right: 20px;
 	padding-bottom: 15%;
 	padding-left: 20px;
-	background-size: cover;
+	/* background-size: cover; */
 	background-attachment: fixed;
 	background-position: center bottom;
 	color: #fff;
