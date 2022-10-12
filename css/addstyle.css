@@ -1,0 +1,126 @@
+.obi_001 {
+  background-image: url("../img/demo-img/pic_concept01.png");
+}
+.obi_001 h2 {
+  text-shadow: 1px 1px 2px #000;
+}
+.obi_001 h2 span {
+  text-shadow: none;
+}
+.obi_001 p {
+  font-size: 16px;
+  text-shadow: 0.5px 0.5px 1px #000;
+}
+.box_right.coram-box {
+  padding: 10px !important;
+}
+.coram {
+  display: flex;
+  align-content: center;
+  height: 101px;
+}
+.coram__imgbox {
+  overflow: hidden;
+  background: #ccc;
+  min-width: 100px;
+}
+.coram__img {
+  object-fit: cover;
+  object-position: 80% 0;
+  width: 100%;
+  height: 100%;
+}
+.coram__textbox {
+  text-align: left;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.coram__title {
+  font-weight: 500;
+}
+.coram__discription {
+  line-height: 1.5;
+}
+.coram__time {
+  margin: 0 0 !important;
+  padding: 0 20px !important;
+}
+.table-area {
+  max-width: 800px;
+  margin: 40px auto !important;
+}
+.table-area__table {
+  margin: 40px auto;
+  width: 100%;
+}
+.table-area__textbox {
+  margin: 0 auto 0 40px;
+  text-align: left;
+}
+.schedule-table {
+  color: #444;
+}
+.schedule-table__time {
+  white-space: nowrap;
+}
+.schedule-table__table-textbox {
+  text-align: left;
+  margin: 0 auto;
+}
+.inline-text {
+  display: inline-block;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.contact {
+  text-align: center;
+}
+.contact-text {
+  font-size: 16px;
+}
+.contact-text__tell a {
+  font-size: 24px;
+  text-decoration: none;
+}
+.footer {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.footer__nav {
+  margin: 20px auto;
+}
+.footer__nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer__nav ul li {
+  margin-right: 10px;
+}
+.footer__nav ul li a {
+  text-decoration: none;
+}
+.base-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.base-info__logo img {
+  object-fit: cover;
+  object-position: 80% 0;
+  width: 100%;
+  height: 100%;
+}
+.base-info__text {
+  text-align: left;
+  margin-left: 10px;
+}
+.map {
+  width: 100%;
+  height: 300px;
+  background: #ccc;
+}

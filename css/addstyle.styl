@@ -1,0 +1,142 @@
+$MediaM = 770
+$MediaL = 1200
+
+// 基本スマホ記述(～770px)
+
+// lg記述(1200px～)
+lg()
+  @media screen and (min-width unit($MediaL , "px"))
+    {block}
+
+// sm記述(770px～1200px)
+md()
+  @media screen and (min-width unit($MediaM, "px"))
+    {block}
+
+.obi_001
+  background-image: url(../img/demo-img/pic_concept01.png);
+  & h2
+    text-shadow: 1px 1px 2px black
+    & span
+      text-shadow: none
+  & p
+    font-size: 16px
+    text-shadow: 0.5px 0.5px 1px black
+
+.box_right.coram-box
+  padding: 10px !important
+
+.coram
+  display: flex
+  align-content: center
+  height: 101px
+
+  &__imgbox
+    overflow:hidden 
+    background: #ccc
+    min-width:100px
+
+  &__img 
+    object-fit: cover
+    object-position:80% 0
+    width: 100%
+    height: 100%
+
+  &__textbox
+    text-align: left
+    margin-left: 20px
+    overflow: hidden
+
+  &__title
+    font-weight: 500
+
+  &__discription
+    line-height: 1.5
+
+.coram__time
+  margin: 0 0 !important 
+  padding: 0 20px !important
+
+.table-area
+  max-width 800px
+  margin: 40px auto !important
+
+  &__table
+    margin: 40px auto
+    width: 100%
+
+  &__textbox
+    margin: 0 auto 0 40px
+    text-align: left
+
+.schedule-table
+  color: #444
+
+  &__time
+    white-space:nowrap
+
+  &__table-textbox
+    text-align: left
+    margin: 0 auto;
+
+.inline-text
+  display: inline-block
+  margin: 0 !important
+  padding: 0 !important
+
+.contact
+  text-align: center
+
+.contact-text
+  font-size:16px
+  
+  &__tell
+    a
+      font-size: 24px
+      text-decoration: none
+
+.footer
+  width: 100%
+  max-width 800px
+  padding: 10px
+  margin: 0 auto
+
+  // &__infomation
+  //   display: flex
+  //   justify-content: center
+  //   flex-wrap: wrap
+
+  &__nav
+    margin: 20px auto
+    
+    ul
+      display: flex
+      justify-content: center
+      flex-wrap: wrap
+      li
+        margin-right: 10px
+        a
+          text-decoration: none
+
+.base-info
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  padding: 10px
+
+  &__logo
+    img
+      object-fit: cover
+      object-position:80% 0
+      width: 100%
+      height: 100%
+
+  &__text
+    text-align: left
+    margin-left:10px
+
+.map
+  width: 100%
+  height: 300px
+  background: #ccc

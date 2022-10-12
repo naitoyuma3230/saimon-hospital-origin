@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+原則として、許可なしの再配布は禁止させていただきます。
+また、無料でお使いになる場合は、【ＰＲ枠】のリンクは全て削除禁止です。
+（※加工後の削除も禁止させていただいておりますのでご了承ください。）
+PR枠の削除（有料プラン）に関するお問い合わせや、その他ご不明な点は、
+https://www.megapx.com/contact.htmlよりお問い合わせください。
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-->
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+
+<title>お問い合わせ　最新レスポンシブHTMLテンプレート no.005</title>
+<meta name="Keywords" content="レスポンシブ,HTMLテンプレート,ホームページ制作" />
+<meta name="Description" content="お問い合わせ　最新レスポンシブHTMLテンプレート no.005。このページの説明文を入れてください。" />
+
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/mailform.css" />
+
+<link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+<link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+
+<div class="bg_bl"></div>
+
+
+<h1><a href="index.html"><img src="img/logo.png" alt="メガピクスホーム"></a></h1>
+
+
+<a class="menu_btn">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</a>
+
+
+<nav id="g_navi" class="txt_w">
+    <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="concept.html">コンセプト</a></li>
+    <li><a href="works.html">施工事例</a></li>
+    <li><a href="about.html">会社概要</a></li>
+    <li><a href="faq.html">よくある質問</a></li>
+    <li><a href="news.html">お知らせ</a></li>
+    <li class="contact"><a href="contact.html"><i class="fas fa-envelope"></i> お問い合わせ</a></li>   
+    </ul>
+</nav>
+
+<ul class="h_sns">
+      <li><a href="#"><i class="fas fa-book"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+</ul>
+
+</header>
+
+
+
+<div id="sub_top" class="contact">
+Contact us
+</div>
+
+<div class="pankuzu">
+<ul>
+<li><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+<li>お問い合わせ</li>
+</ul>
+</div>
+
+
+
+<div class="content">
+
+
+<div class="cont_wrap effect">
+
+<h2>お問い合わせ</h2>
+<p>これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。<br>
+これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。</p>
+
+<form action="php/mailform.php" method="post" id="mail_form">
+	<dl>
+		<dt>会社名<span>Company Name</span></dt>
+		<dd><input type="text" id="company" name="company" value="" /></dd>
+		
+		<dt>名前<span>Your Name</span></dt>
+		<dd class="required"><input type="text" id="name_1" name="name_1" value="" /> <input type="text" id="name_2" name="name_2" value="" /></dd>
+		
+		<dt>ふりがな<span>Name Reading</span></dt>
+		<dd><input type="text" id="read_1" name="read_1" value="" /> <input type="text" id="read_2" name="read_2" value="" /></dd>
+		
+		<dt>メールアドレス<span>Mail Address</span></dt>
+		<dd class="required"><input type="email" id="mail_address" name="mail_address" value="" /></dd>
+		
+		<dt>メールアドレス<br />(確認用)<span>Mail Address Confirm</span></dt>
+		<dd class="required"><input type="email" id="mail_address_confirm" name="mail_address_confirm" value="" /></dd>
+		
+		<dt>郵便番号<span>Postal</span></dt>
+		<dd class="required"><input type="text" id="postal" name="postal" value="" onkeyup="AjaxZip3.zip2addr(this,'','address','address');" />　<a href="http://www.post.japanpost.jp/zipcode/" target="_blank">郵便番号検索</a></dd>
+		
+		<dt>住所<span>Address</span></dt>
+		<dd><input type="text" id="address" name="address" value="" /></dd>
+		
+		<dt>電話番号<span>Phone Number</span></dt>
+		<dd><input type="tel" id="phone" name="phone" value="" /></dd>
+		
+		<dt>ご希望のお住まい<span>Housing</span></dt>
+		<dd>
+			<select id="housing" name="housing">
+				<option value="">選択してください</option>
+				<option value="戸建て">戸建て</option>
+				<option value="マンション">マンション</option>
+				<option value="アパート">アパート</option>
+				<option value="その他">その他</option>
+			</select>
+		</dd>
+		
+		<dt>お問い合わせの種類<span>Inquiry Kind</span></dt>
+		<dd>
+			<ul>
+				<li><label><input type="checkbox" class="kind" name="kind[]" value="新築戸建て" />新築戸建て</label></li>
+				<li><label><input type="checkbox" class="kind" name="kind[]" value="リフォーム" />リフォーム</label></li>
+				<li><label><input type="checkbox" class="kind" name="kind[]" value="リノベーション" />リノベーション</label></li>
+				<li><label><input type="checkbox" class="kind" name="kind[]" value="採用について" />採用について</label></li>
+				<li><label><input type="checkbox" class="kind" name="kind[]" value="ご意見・ご要望" />ご意見・ご要望</label></li>
+			</ul>
+		</dd>
+		
+		<dt>返信方法のご希望<span>Response</span></dt>
+		<dd>
+			<ul>
+				<li><label><input type="checkbox" class="response" name="response[]" value="電話での返信を希望" />電話での返信を希望</label></li>
+				<li><label><input type="checkbox" class="response" name="response[]" value="メールでの返信を希望" />メールでの返信を希望</label></li>
+				<li><label><input type="checkbox" class="response" name="response[]" value="返信不要" />返信不要</label></li>
+			</ul>
+		</dd>
+		
+		<dt>お問い合わせの内容<span>Mail Contents</span></dt>
+		<dd class="required"><textarea id="mail_contents" name="mail_contents" cols="40" rows="5"></textarea></dd>
+		
+	</dl>
+	
+	<p id="form_submit"><input type="button" id="form_submit_button" value="送信する" /></p>
+</form>
+
+
+</div><!--/cont_wrap-->
+
+
+
+</div><!--/content-->
+
+
+
+
+<div class="content">
+
+
+
+
+<div class="box_cont">
+
+<div class="box_c_in effect">
+<img src="img/sample_001.jpg" alt="サンプルイメージ">
+<h2>私たちの目指すもの</h2>
+<p><strong>日々の暮らしを「デザイン」する。</strong><br>
+私たちの目指すもの、「イメージ確認用のサンプル文言」になります。適当な文言に置き換えてお使いください。私たちの目指すもの、「イメージ確認用のサンプル文言」になります。</p>
+<div class="btn_cnt"><a href="concept.html"><i class="fas fa-arrow-right"></i>詳しく見る</a></div>
+</div><!--/box_c_in-->
+
+<div class="box_c_in effect d_02">
+<img src="img/sample_002.jpg" alt="サンプルイメージ">
+<h2>代表ご挨拶</h2>
+<p><strong>すべてのお客様に「最高の住まい」を。</strong><br>
+代表ご挨拶、「イメージ確認用のサンプル文言」になります。<br>
+適当な文言に置き換えてお使いください。代表ご挨拶、「イメージ確認用のサンプル文言」になります。適当な文言に置き換えてお使いください。</p>
+<div class="btn_cnt"><a href="about.html"><i class="fas fa-arrow-right"></i>詳しく見る</a></div>
+</div><!--/box_c_in-->
+
+
+<div class="box_c_in effect d_02">
+<img src="img/sample_003.jpg" alt="サンプルイメージ">
+<h2>施工事例</h2>
+<p><strong>お手伝いさせていただいた一部をご紹介。</strong><br>
+施工事例、「イメージ確認用のサンプル文言」になります。<br>
+適当な文言に置き換えてお使いください。施工事例、「イメージ確認用のサンプル文言」になります。適当な文言に置き換えてお使いください。</p>
+<div class="btn_cnt"><a href="works.html"><i class="fas fa-arrow-right"></i>詳しく見る</a></div>
+</div><!--/box_c_in-->
+
+
+<div class="box_c_in effect d_02">
+<img src="img/sample_004.jpg" alt="サンプルイメージ">
+<h2>よくあるご質問</h2>
+<p><strong>よくいただくご質問につきまして。</strong><br>
+よくあるご質問、「イメージ確認用のサンプル文言」になります。<br>
+適当な文言に置き換えてお使いください。よくあるご質問、「イメージ確認用のサンプル文言」になります。適当な文言に置き換えてお使いください。</p>
+<div class="btn_cnt"><a href="faq.html"><i class="fas fa-arrow-right"></i>詳しく見る</a></div>
+</div><!--/box_c_in-->
+
+
+</div><!--/box_cont-->
+
+
+
+</div><!--/content-->
+
+
+
+
+
+<footer>
+<div class="cont_wrap effect">
+
+
+<div class="f_box lg">
+<img src="img/logo.png" alt="メガピクスホーム　ロゴ">
+<p>株式会社 メガピクスホーム<br>
+〒385-0000　長野県佐久市サンプル町1234-5678<br>
+TEL.0120-000-0000（平日 8:00～17:00）</p>
+</div>
+
+<div class="f_box">
+<ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="concept.html">コンセプト</a></li>
+    <li><a href="works.html">施工事例</a></li>
+    <li><a href="about.html">会社概要</a></li>
+</ul>
+</div>
+
+<div class="f_box">
+<ul>
+    <li><a href="faq.html">よくある質問</a></li>
+    <li><a href="news.html">お知らせ</a></li>
+    <li class="contact"><a href="contact.html"><i class="fas fa-envelope"></i> お問い合わせ</a></li>  
+</ul>
+</div>
+
+
+
+</div><!--/cont_wrap-->
+
+<address>
+Copyright (C) MegaPx. All Rights Reserved.
+</address>
+
+<!--　削除禁止【ＰＲ枠】ここから　--> 
+<!--prno.220309ver3.1--> 
+<div class="box_pr"><ul>
+<li>Design by <a href="https://www.megapx.com/" title="ホームページ制作・ロゴデザイン：メガピクス" target="_blank">Megapx</a></li>
+<li>Template by <a href="https://www.s-hoshino.com/" title="HTMLテンプレート配布元：フリー素材屋Hoshino" target="_blank">s-hoshino.com</a>、<a href="https://www.sozai-dx.com/" title="無料素材・フリー素材DX" target="_blank">sozai-dx.com</a></li>
+</ul></div>
+<!--　/削除禁止【ＰＲ枠】ここまで　--> 
+  
+
+</footer>
+
+
+<div class="to_top"><a href="#"><i class="fas fa-chevron-up" title="ページトップへ戻る"></i></a></div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery.inview.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
