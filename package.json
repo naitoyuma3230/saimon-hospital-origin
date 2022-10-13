@@ -1,8 +1,22 @@
 {
-	"dependencies": {
-		"stylus": "^0.59.0"
-	},
-	"scripts": {
-		"stylus": "stylus -w css/addstyle.styl"
-	}
+  "dependencies": {
+    "stylus": "^0.59.0"
+  },
+  "scripts": {
+    "stylus": "stylus -w css/addstyle.styl"
+  },
+  "name": "saimon-origin",
+  "version": "1.0.0",
+  "description": "for saimo-template",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naitoyuma3230/saimon-hospital-origin.git"
+  },
+  "author": "naitoyuma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naitoyuma3230/saimon-hospital-origin/issues"
+  },
+  "homepage": "https://github.com/naitoyuma3230/saimon-hospital-origin#readme"
 }

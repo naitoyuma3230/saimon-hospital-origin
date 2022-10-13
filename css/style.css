@@ -365,6 +365,7 @@ header h1 a img {
 	border-bottom-style: dotted;
 	border-bottom-color: #999;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .content .ul_news li a:hover {

@@ -28,7 +28,6 @@
 			href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="css/mailform.css" />
 		<link rel="stylesheet" href="css/addstyle.css" />
 		<link rel="stylesheet" href="css/micromodal.css" />
 	</head>
@@ -59,110 +58,65 @@
 			</nav>
 		</header>
 
-		<div id="sub_top" class="contact">お問い合わせ</div>
+		<div id="sub_top" class="sample">コラム</div>
 
 		<div class="pankuzu">
 			<ul>
 				<li>
 					<a href="index.html"><i class="fas fa-home"></i>HOME</a>
 				</li>
-				<li>お問い合わせ</li>
+				<li>
+					<a href="news.html">お知らせ/コラム一覧</a>
+				</li>
+				<li>コラム</li>
 			</ul>
 		</div>
 
 		<div class="content">
 			<div class="cont_wrap effect">
-				<h2>お問い合わせ</h2>
+				<h2>コラムタイトル</h2>
+
+				<div class="img_center">
+					<span>画像タイトル</span>
+					<img src="img/demo-img/pic_concept01.png" alt="サンプルイメージ" />
+				</div>
+
 				<p>
 					これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。<br />
 					これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。
 				</p>
 
-				<form action="php/mailform.php" method="post" id="mail_form">
-					<dl>
-						<dt>お名前<span>Your Name</span></dt>
-						<dd class="required">
-							<input type="text" id="name_1" name="name_1" value="" />
-						</dd>
+				<h3>見出し文字</h3>
 
-						<dt>メールアドレス<span>Mail Address</span></dt>
-						<dd class="required">
-							<input
-								type="email"
-								id="mail_address"
-								name="mail_address"
-								value=""
-							/>
-						</dd>
+				<p>
+					これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。<br />
+					これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。
+				</p>
+				<h3>見出し文字</h3>
 
-						<dt>
-							メールアドレス<br />(確認用)<span>Mail Address Confirm</span>
-						</dt>
-						<dd class="required">
-							<input
-								type="email"
-								id="mail_address_confirm"
-								name="mail_address_confirm"
-								value=""
-							/>
-						</dd>
-
-						<dt>電話番号<span>Phone Number</span></dt>
-						<dd><input type="tel" id="phone" name="phone" value="" /></dd>
-
-						<dt>返信方法のご希望<span>Response</span></dt>
-						<dd>
-							<ul>
-								<li>
-									<label
-										><input
-											type="checkbox"
-											class="response"
-											name="response[]"
-											value="電話での返信を希望"
-										/>電話での返信を希望</label
-									>
-								</li>
-								<li>
-									<label
-										><input
-											type="checkbox"
-											class="response"
-											name="response[]"
-											value="メールでの返信を希望"
-										/>メールでの返信を希望</label
-									>
-								</li>
-								<li>
-									<label
-										><input
-											type="checkbox"
-											class="response"
-											name="response[]"
-											value="返信不要"
-										/>返信不要</label
-									>
-								</li>
-							</ul>
-						</dd>
-
-						<dt>お問い合わせの内容<span>Mail Contents</span></dt>
-						<dd class="required">
-							<textarea
-								id="mail_contents"
-								name="mail_contents"
-								cols="40"
-								rows="5"
-							></textarea>
-						</dd>
-					</dl>
-
-					<p id="form_submit">
-						<input type="button" id="form_submit_button" value="送信する" />
-					</p>
-				</form>
+				<p>
+					これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。<br />
+					これはイメージ確認用のサンプル文言になります。適当な文言に置き換えてお使いください。
+				</p>
 			</div>
-			<!--/cont_wrap-->
+
+			<div class="contact effect">
+				<div class="box_att effect">
+					<h2>お問い合わせ</h2>
+				</div>
+				<div class="contact__textbox contact-text effect">
+					<p>お気軽にご相談ください！</p>
+					<div class="btn_cnt">
+						<a href="#"><i class="fas fa-arrow-right"></i>お問い合せ</a>
+					</div>
+					<p class="contact-text__tell">
+						<a href="#" class="tel"
+							><i class="fas fa-phone-alt"></i><strong>0120-000-0000</strong></a
+						><br />
+						電話受付時間　平日8：00～17：00
+					</p>
+				</div>
+			</div>
 		</div>
 
 		<footer>
@@ -188,7 +142,7 @@
 						<li><a href="index.html">HOME</a></li>
 						<li><a href="concept.html">当院について</a></li>
 						<li><a href="works.html">診療内容</a></li>
-						<li><a href="about.html">お知らせ/コラム</a></li>
+						<li><a href="news.html">お知らせ/コラム一覧</a></li>
 						<li><a href="contact.html">お問い合わせ</a></li>
 					</ul>
 				</div>
@@ -238,5 +192,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="js/jquery.inview.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/jquery.fancybox.js"></script>
+		<script>
+			$("[data-fancybox]").fancybox();
+		</script>
 	</body>
 </html>

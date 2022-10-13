@@ -1,3 +1,10 @@
+.hover-focus {
+  cursor: pointer;
+}
+.hover-focus:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
 .obi_001 {
   background-image: url("../img/demo-img/pic_concept01.png");
 }
