@@ -62,18 +62,13 @@
   width: 100%;
 }
 .table-area__textbox {
-  margin: 0 auto 0 40px;
-  text-align: left;
+  margin-left: 2rem;
 }
 .schedule-table {
   color: #444;
 }
 .schedule-table__time {
   white-space: nowrap;
-}
-.schedule-table__table-textbox {
-  text-align: left;
-  margin: 0 auto;
 }
 .inline-text {
   display: inline-block;
