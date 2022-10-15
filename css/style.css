@@ -195,7 +195,7 @@ header h1 a img {
 	overflow: hidden;
 }
 
-#index_top #top_catch {
+.index-top #top_catch {
 	position: absolute;
 	top: 50%;
 	left: 50%;
